@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Envoyez votre design - Commandes personnalisées CasaFit via email.">
+    <title>Envoyez Votre Design | CasaFit</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="../index.html" class="logo">Casa<span>Fit</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Accueil</a>
+                <a href="products.html" class="nav-link">Produits</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+                <a href="contact.html" class="nav-link active">Commander</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/212674706781" target="_blank"><i class="fab fa-whatsapp" style="font-size: 18px;"></i></a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Envoyez Votre Design</h1>
+            <p>Commandez vos vêtements personnalisés en quelques clics</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate">
+                    <h2>Contactez-Nous</h2>
+                    <p>Vous avez des questions sur nos produits ou souhaitez passer une commande ? Nous sommes là pour vous aider 24h/24, 7j/7. Écrivez-nous directement sur WhatsApp pour une réponse rapide.</p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/212674706781" class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp (Principal)</h4>
+                                <span>0674 706 781</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/212770151471" class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp (Secondaire)</h4>
+                                <span>0770 151 471</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horaires</h4>
+                                <span>24/7 - Toujours Ouvert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h3 style="font-size: 16px; margin-bottom: 16px;">Suivez-Nous</h3>
+                        <div class="footer-social">
+                            <a href="https://instagram.com/casafit.tm" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/casafit.tm" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form animate-slide">
+                    <h3>Formulaire De Commande</h3>
+                    <p style="color: var(--gray-500); margin-bottom: 24px; font-size: 14px;">Remplissez le formulaire ci-dessous pour commander. Vous pouvez joindre votre design directement.</p>
+
+                    <form action="https://formsubmit.co/abdellahkessou@gmail.com" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_subject" value="Nouvelle Commande CasaFit">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <label for="name">Votre Nom *</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numéro WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+212 6XX XXX XXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Produit Souhaité *</label>
+                            <select id="product" name="product" required>
+                                <option value="">Sélectionnez une catégorie</option>
+                                <option value="Hoodie">Hoodie</option>
+                                <option value="T-Shirt">T-Shirt</option>
+                                <option value="Pull">Pull</option>
+                                <option value="Casquette">Casquette</option>
+                                <option value="Plusieurs Articles">Plusieurs Articles</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Taille Souhaitée</label>
+                            <select id="size" name="size">
+                                <option value="">Sélectionnez la taille (optionnel)</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre Message</label>
+                            <textarea id="message" name="message" placeholder="Dites-nous vos préférences, quantités, ou toutes questions..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="design">Joindre Votre Design (Optionnel)</label>
+                            <input type="file" id="design" name="attachment" accept="image/*,.pdf,.ai,.psd" style="padding: 12px; border: 1px dashed var(--gray-300); background: var(--white);">
+                            <span style="font-size: 12px; color: var(--gray-500); display: block; margin-top: 8px;">Formats acceptés: JPG, PNG, PDF, AI, PSD</span>
+                        </div>
+                        <button type="submit" class="btn btn-full">
+                            <i class="fas fa-paper-plane"></i> Envoyer La Commande
+                        </button>
+                        <p style="text-align: center; font-size: 12px; color: var(--gray-500); margin-top: 16px;">
+                            Vos informations sont sécurisées et ne seront utilisées que pour traiter votre commande.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--gray-100);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Aide</span>
+                <h2 class="section-title">Questions Fréquentes</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 24px; padding: 24px; background: var(--white); border: 1px solid var(--gray-200);">
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">Comment passer une commande ?</h4>
+                    <p style="color: var(--gray-500); font-size: 14px;">Remplissez le formulaire ci-dessus en joignant votre design si vous en avez un. Nous vous contacterons sur WhatsApp pour confirmer les détails et vous guider dans le processus.</p>
+                </div>
+                <div style="margin-bottom: 24px; padding: 24px; background: var(--white); border: 1px solid var(--gray-200);">
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">Quels modes de paiement acceptez-vous ?</h4>
+                    <p style="color: var(--gray-500); font-size: 14px;">Nous acceptons le paiement à la livraison (COD) et les virements bancaires. Les détails de paiement seront fournis une fois votre commande confirmée.</p>
+                </div>
+                <div style="margin-bottom: 24px; padding: 24px; background: var(--white); border: 1px solid var(--gray-200);">
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">Livrez-vous dans tout le Maroc ?</h4>
+                    <p style="color: var(--gray-500); font-size: 14px;">Oui ! Nous offrons la livraison gratuite dans tout le Maroc pour les commandes de plus de 500 DH. La livraison prend généralement 2-5 jours ouvrables.</p>
+                </div>
+                <div style="padding: 24px; background: var(--white); border: 1px solid var(--gray-200);">
+                    <h4 style="font-size: 16px; margin-bottom: 8px;">Quelle est votre politique de retour ?</h4>
+                    <p style="color: var(--gray-500); font-size: 14px;">Nous offrons une politique de retour de 30 jours pour les articles non portés avec les étiquettes d'origine. Contactez-nous sur WhatsApp pour initier un retour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">Casa<span>Fit</span></a>
+                    <p>Vêtements premium imprimés pour ceux qui se démarquent. Hoodies, t-shirts, pulls et casquettes de qualité.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/casafit.tm" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/casafit.tm" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/212674706781" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Boutique</h4>
+                    <a href="products.html?category=hoodies">Hoodies</a>
+                    <a href="products.html?category=tshirts">T-Shirts</a>
+                    <a href="products.html?category=sweaters">Pulls</a>
+                    <a href="products.html?category=caps">Casquettes</a>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Entreprise</h4>
+                    <a href="about.html">À Propos</a>
+                    <a href="contact.html">Commander</a>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Contact</h4>
+                    <a href="https://wa.me/212674706781">0674 706 781</a>
+                    <a href="https://wa.me/212770151471">0770 151 471</a>
+                    <a href="contact.html">Formulaire</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CasaFit. Tous droits réservés.</p>
+                <p>Vêtements Premium Imprimés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/212674706781" class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Chat sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
