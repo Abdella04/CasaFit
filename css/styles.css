@@ -540,8 +540,14 @@ ul {
 /* Lookbook Section */
 .lookbook {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 4px;
+}
+
+@media (max-width: 1200px) {
+    .lookbook {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .lookbook-item {
