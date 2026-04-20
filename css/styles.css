@@ -537,16 +537,34 @@ ul {
     }
 }
 
-/* Lookbook Section */
-.lookbook {
+/* Lookbook / Instagram Section */
+.lookbook, .instagram-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 4px;
+    gap: 8px;
+    padding: 0 40px;
+}
+
+.instagram-grid .lookbook-item {
+    aspect-ratio: 1;
+}
+
+.instagram-grid .lookbook-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 1200px) {
-    .lookbook {
+    .lookbook, .instagram-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .lookbook, .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
     }
 }
 
